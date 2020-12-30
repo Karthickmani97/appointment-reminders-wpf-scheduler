@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ReminderMapping
 {
-    public class ReminderModel : NotificationObject
+    public class Reminder : NotificationObject
     {
         #region Fields
 

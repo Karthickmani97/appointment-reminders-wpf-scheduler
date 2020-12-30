@@ -9,7 +9,7 @@ using System.Windows.Media;
 
 namespace ReminderMapping
 {
-    public class SchedulerModel : NotificationObject
+    public class Meeting : NotificationObject
     {
         DateTime from, to;
         string eventName;
@@ -23,10 +23,10 @@ namespace ReminderMapping
         private ObservableCollection<object> resources;
         private string notes;
         private string timeValue;
-        private ObservableCollection<ReminderModel> reminders;
+        private ObservableCollection<Reminder> reminders;
         private Brush foreground;
 
-        public SchedulerModel()
+        public Meeting()
         {
         }
 
@@ -147,7 +147,7 @@ namespace ReminderMapping
             }
         }
 
-        public ObservableCollection<ReminderModel> Reminders
+        public ObservableCollection<Reminder> Reminders
         {
             get { return reminders; }
             set
